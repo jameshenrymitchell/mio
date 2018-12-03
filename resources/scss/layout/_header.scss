@@ -1,0 +1,45 @@
+/* Layout > Header */
+
+#header {
+    background: #fff;
+    margin: 0 auto;
+    width: 100%;
+    
+    .logo {
+        float: left;
+        height: 25px;
+        padding: 40px 0;
+    }
+    
+    .container,
+    ul {
+        min-height: 105px;
+    }
+    
+    ul {
+        float: right;
+        
+        li {
+            display: inline-block;
+            float: left;
+            list-style: none;
+            margin: 0 20px 0 0;
+            padding: 40px 0;
+            
+            &:last-child {
+                margin: 0;
+            }
+            
+            &.active a {
+                color: $color-medium-blue;
+            }
+            
+            a {
+                color: $color-medium-grey;
+                font-size: 14pt;
+                height: 25px;
+                line-height: 25px
+            }
+        }
+    }
+}

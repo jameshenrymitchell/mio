@@ -1,0 +1,77 @@
+/* Pages > Products */
+
+#products {
+    padding: 80px 0;
+
+    h1,
+    h2 {
+        color: $color-medium-grey;
+    }
+
+    h2 {
+        margin-bottom: 70px;
+    }
+
+    h3 {
+        color: #eee;
+    }
+
+    .product {
+        background: $color-dark-blue-tint;
+        border-radius: 4px;
+        display: flex;
+        margin-bottom: 6%;
+        overflow: hidden;
+
+        &:nth-of-type(even) {
+            flex-direction: row-reverse;
+        }
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        &:nth-of-type(1) .image {
+            background: url(../img/Products-Furniture-Sofas.JPG) bottom;
+            background-size: cover;
+        }
+
+        &:nth-of-type(2) .image {
+            background: url(../img/Products-Lighting-Mirrors.JPG) bottom;
+            background-size: cover;
+        }
+
+        &:nth-of-type(3) .image {
+            background: url(../img/Products-Flooring.JPG) bottom;
+            background-size: cover;
+        }
+
+        &:nth-of-type(4) .image {
+            background: url(../img/Products-Curtains-Poles-Fittings.JPG) top;
+            background-size: cover;
+        }
+
+        &:nth-of-type(5) .image {
+            background: url(../img/Products-Accessories-Fragrance.JPG) center;
+            background-size: cover;
+        }
+
+        .image {
+            width: 50%;
+        }
+
+        .detail {
+            background: #fff;
+            padding: 6%;
+            width: 38%;
+
+            h3 {
+                color: $color-dark-blue;
+            }
+
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+}

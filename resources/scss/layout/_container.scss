@@ -1,0 +1,27 @@
+/* Layout > Container */
+
+.container {
+    margin: 0 auto;
+    max-width: 860px;
+    overflow: auto;
+    width: 88%;
+}
+
+#wrapper {
+    height: 100%;
+    position: relative;
+}
+
+#slate {
+    background: $color-medium-blue;
+    padding: 80px 0;
+
+    h1,
+    h2 {
+        color: $color-medium-grey;
+    }
+
+    h2 {
+        margin: 0;
+    }
+}

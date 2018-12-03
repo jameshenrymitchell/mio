@@ -1,0 +1,51 @@
+/* Base > Reset */
+
+b,
+body,
+div,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+html,
+i,
+img,
+label,
+li,
+menu,
+nav,
+p,
+small,
+span,
+ul {
+    background: 0 0;
+    border: 0;
+    font-size: 100%;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+footer,
+header,
+img,
+nav {
+    display: block
+}
+
+input,
+select {
+    vertical-align: middle
+}
+
+html,
+body {
+    background: #eee;
+    height: 100%;
+}

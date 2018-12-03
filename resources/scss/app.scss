@@ -1,0 +1,84 @@
+// Base
+
+@import 'base/reset';
+@import 'base/global';
+@import 'base/colors';
+@import 'base/typography';
+
+// Components
+
+@import 'components/buttons';
+@import 'components/slick';
+
+// Layout
+
+@import 'layout/container';
+@import 'layout/header';
+@import 'layout/nav';
+@import 'layout/footer';
+
+// Pages
+
+@import 'pages/studio';
+@import 'pages/projects';
+@import 'pages/products';
+@import 'pages/fabrics';
+@import 'pages/contact';
+
+// Media Queries
+
+@media screen and (max-width: 700px) {
+    .nav,
+    .openNav {
+        display: block
+    }
+    #header ul {
+        display: none!important
+    }
+    #services .service .image {
+        width: 94%
+    }
+    #services .service .detail {
+        width: 88%
+    }
+    #team #support div {
+        width: 48.5%
+    }
+    #team #support div:nth-of-type(1) {
+        margin: 0 3% 40px 0
+    }
+    #services .service,
+    #team #support div:nth-of-type(2),
+    #contact #details {
+        margin: 0 0 40px 0
+    }
+    #services .service:last-child {
+        margin: 0
+    }
+    #fabrics #designers .fab-1,
+    #fabrics #designers .fab-2,
+    #fabrics #designers .fab-3,
+    #contact #details {
+        width: 100%;
+        margin-right: 0
+    }
+    #fabrics #fab-samples img,
+    #fabrics #wall-samples img {
+        width: 49%
+    }
+    #fabrics div img:nth-child(odd) {
+        margin-right: 1%!important;
+    }
+    #fabrics div img:nth-of-type(2n+0) {
+        margin-right: 0
+    }
+    #contact #consultations {
+        width: 88%;
+        padding: 6%
+    }
+    #header img.logo {
+        float: none;
+        width: 86px;
+        margin: 0 auto;
+    }
+}

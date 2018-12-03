@@ -1,0 +1,51 @@
+/* Layout > Footer */
+
+footer {
+    background: $color-medium-blue;
+    padding: 40px 0;
+
+    .container {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+
+        .copyright {
+            width: 50%;
+    				p {
+    						color: $color-light-grey;
+    						display: inline;
+    				}
+    		}
+
+    		.social {
+            width: 50%;
+    				text-align: right;
+
+    				a {
+                display: inline-block;
+
+    						&:focus,
+    						&:link,
+    						&:visited {
+    								color: $color-light-grey;
+    						}
+
+    						&:active,
+    						&:hover {
+    								color: #fff;
+    						}
+
+    						img {
+    								display: block;
+    								height: 28px;
+    								margin-right: 10px;
+    								width: 28px;
+    						}
+
+    						&:last-child img {
+    								margin-right: 0;
+    						}
+    				}
+    		}
+    }
+}

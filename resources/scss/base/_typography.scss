@@ -1,0 +1,76 @@
+/* Base > Typography */
+
+@font-face {
+    font-family: 'Atlas Grotesk';
+    src: url(/assets/fonts/atlas-grotesk.eot);
+    src: url(/assets/fonts/atlas-grotesk.eot?#iefix) format ('embedded-opentype'), url(/assets/fonts/atlas-grotesk.woff) format('woff'), url(/assets/fonts/atlas-grotesk.otf) format('truetype'), url(/assets/fonts/atlas-grotesk.svg#atlas-grotesk) format ('svg');
+    unicode-range: U+000-5FF;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Tiempos';
+    src: url('/assets/fonts/Tiempos.eot');
+    src: local('☺'), url('/assets/fonts/Tiempos.woff') format('woff'), url('/assets/fonts/Tiempos.ttf') format('truetype'), url('/assets/fonts/Tiempos.svg') format('svg');
+    unicode-range: U+000-5FF;
+    font-weight: normal;
+    font-style: normal
+}
+
+h1 {
+    color: $color-medium-blue;
+    font: 36pt 'Tiempos', Georgia, Times New Roman, serif;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h2 {
+    color: $color-medium-blue;
+    font: 22pt 'Tiempos', Georgia, Times New Roman, serif;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h3 {
+    color: $color-medium-blue;
+    font: 14pt 'Atlas Grotesk', Helvetica, Arial, sans-serif;
+    margin-bottom: 30px;
+}
+
+p {
+    color: $color-medium-grey;
+    font-size: 12pt;
+}
+
+small {
+    color: $color-medium-grey;
+    font-size: 9pt;
+}
+
+b {
+    font-weight: bold;
+}
+
+
+a {
+    background: 0 0;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    transition: all .5s ease;
+    vertical-align: baseline;
+
+    &:focus,
+    &:link,
+    &:visited {
+        color: $color-medium-grey;
+        outline: 0;
+        text-decoration: none;
+    }
+
+    &:active,
+    &:hover {
+        color: $color-medium-blue;
+    }
+}

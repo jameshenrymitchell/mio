@@ -1,0 +1,23 @@
+{
+  "name": "mio",
+  "version": "1.0.0",
+  "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "browserify": "^13.0.0",
+    "cssnano": "^3.5.2",
+    "jshint": "^2.9.1",
+    "node-sass": "^3.4.2",
+    "postcss": "^5.0.16",
+    "postcss-cli": "^2.5.1",
+    "watch": "^0.17.1"
+  },
+  "scripts": {
+    "prebuild:css": "node-sass --include-path scss resources/scss/app.scss    public/assets/css/app.css",
+    "build:css": "postcss --use autoprefixer -b 'last 2 versions' < public/assets/css/app.css | postcss --use cssnano > public/assets/css/app.min.css",
+    "lint": "jshint resources/js/*.js",
+    "build:js": "browserify resources/js/main.js > public/assets/js/main.min.js",
+    "build": "npm run build:css && npm run build:js",
+    "prebuild:js": "npm run lint",
+    "build:watch": "watch 'npm run build' resources/*"
+  }
+}
